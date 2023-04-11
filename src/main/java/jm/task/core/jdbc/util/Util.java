@@ -12,7 +12,7 @@ public class Util {
 
     static {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, user, password);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
@@ -20,6 +20,7 @@ public class Util {
     }
 
     public static Connection getConnection() {
+
         return connection;
     }
     // реализуйте настройку соеденения с БД
