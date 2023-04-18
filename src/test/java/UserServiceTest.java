@@ -53,6 +53,22 @@ public class UserServiceTest {
         } catch (Exception e) {
             Assert.fail("Во время тестирования сохранения пользователя произошло исключение\n" + e);
         }
+
+
+//            userService.dropUsersTable();
+//            userService.createUsersTable();
+//            userService.saveUser(testName, testLastName, testAge);
+//
+//            User user = userService.getAllUsers().get(0);
+//
+//            if (!testName.equals(user.getName())
+//                    || !testLastName.equals(user.getLastName())
+//                    || testAge != user.getAge()
+//            ) {
+//                Assert.fail("User был некорректно добавлен в базу данных");
+//            }
+
+
     }
 
     @Test
